@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name="tb_user")
+@Table(name = "tb_user")
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
@@ -17,10 +17,10 @@ public class User implements Serializable {
     private String phone;
     private String password;
 
-    public User(){}
+    public User() {
+    }
 
-    public User(long id, String name, String email, String phone, String password) {
-        this.id = id;
+    public User(String name, String email, String phone, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
